@@ -1,6 +1,6 @@
 # GSECnet:  Ground  Segmentation  of  Point  Clouds  for  Edge  Computing
 
-## -- Under construction -- (TBD until May 21')
+## -- Under construction -- (TBD after acceptance)
 
 ## Abstract
 
@@ -8,7 +8,7 @@ Ground segmentation of point clouds remains challenging because of the sparse an
 
 ## Supporter 
 
-Dong He - (d.he@kaist.ac.kr) ; Jie Cheng - (tbd)
+Dong He - (d.he@kaist.ac.kr) ; Jie Cheng 
 
 ## Acknowledgments
 
