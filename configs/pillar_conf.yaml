@@ -1,0 +1,47 @@
+# Experiment case
+sector_exp: false
+
+# DATASET & LOADER
+data_path: '/root/dataset/kitti/sequences/'
+checkpoints_path: "/root/dataset/kitti/checkpoints/"
+evaluation_path: "/root/dataset/kitti/evaluation/"
+
+#data_path: '/home/dong/dataset/sequences/'
+#checkpoints_path: "/home/dong/dataset/checkpoints/"
+#evaluation_path: "/home/dong/dataset/evaluation/"
+
+pc_folder: 'velodyne'
+lb_folder: 'labels_pillar_0916'
+
+lidar_height: 1.733
+max_points: 100000  # max points in a scan
+num_workers: 4
+pc_rect_range: [-51.2, -51.2, -2, 51.2, 51.2, 4]
+voxel_size: [0.8, 0.8, 8]
+max_points_in_voxel: 100
+max_voxels: 10000
+
+# FEATURE EXTRACTOR
+input_features: 4
+pseudo_features: 32
+
+# MODEL PARAMETER
+network: munetlite
+#network: MUnet
+#network: MUnet_lite
+#network: CGNet
+batch_size: 1
+num_gpus: 1
+epochs: 25
+use_norm: true
+save_checkpoints: true
+base_lr: 0.001
+weight_decay: 0.00000001
+momentum: 0.9
+#clip: 0.25 # gradient clipping
+
+# RESULT DISPLAY
+#model_name: "unet_kitti3"
+print_freq: 50
+
+
